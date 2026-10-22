@@ -67,6 +67,15 @@
   .kv dt{color:var(--ink3)}
   .kv dd{margin:0}
   @media (max-width:720px){ .shots{grid-template-columns:1fr} h1{font-size:26px} .wrap{padding:32px 18px 60px} }
+
+  .actions{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+  .actions a{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:9px;
+    font-size:14px;font-weight:600;text-decoration:none;color:var(--ink);
+    background:#fff;border:1px solid var(--line);transition:box-shadow .15s,transform .15s}
+  .actions a:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(22,165,124,.14)}
+  .actions a.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  .actions a.primary:hover{box-shadow:0 6px 18px rgba(22,165,124,.28)}
+  .actions .sz{font-weight:400;font-size:12px;opacity:.8}
 </style>
 </head>
 <body>
@@ -80,6 +89,12 @@
       <span>分析对象：github.com/avestura/EyesGuard</span>
       <span>MVP 代码：3,255 行 / 18 个文件</span>
       <span>2026-10-21</span>
+    </div>
+    <div class="actions">
+      <a class="primary" href="https://github.com/ryanhsu2021/eyesprite/releases/download/v0.2/EyeSprite-Setup-0.2.exe">
+        下载 v0.2 安装包 <span class="sz">60 MB · 免装 .NET · 不弹 UAC</span></a>
+      <a href="https://github.com/ryanhsu2021/eyesprite">源码仓库</a>
+      <a href="https://github.com/ryanhsu2021/eyesprite/releases">版本历史</a>
     </div>
   </header>
 

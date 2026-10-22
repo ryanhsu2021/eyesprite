@@ -5,6 +5,10 @@ Windows 护眼提醒工具：托盘常驻，按护眼节奏提醒休息，休息
 
 当前版本 **v0.2**（首个带安装程序的版本为 0.1）。
 
+- 下载安装包：[EyeSprite-Setup-0.2.exe](https://github.com/ryanhsu2021/eyesprite/releases/download/v0.2/EyeSprite-Setup-0.2.exe)（60 MB）
+- 在线文档：[ryanhsu2021.github.io/eyesprite](https://ryanhsu2021.github.io/eyesprite/)
+- 全部版本：[Releases](https://github.com/ryanhsu2021/eyesprite/releases)
+
 ![概览](docs/screenshots/shot-overview.png)
 
 ## 特性
