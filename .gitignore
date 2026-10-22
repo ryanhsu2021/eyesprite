@@ -1,0 +1,20 @@
+# 构建产物（体积大，不入库）
+EyeGuardian/bin/
+EyeGuardian/obj/
+dist/
+*.user
+
+# 上游参考仓库（仅本地分析用，不入库）
+ref-EyesGuard/
+
+# WorkBuddy 会话数据
+.workbuddy/
+
+# 运行期输出（只忽略根目录，docs/screenshots 下的截图要入库）
+/probe.txt
+/shot-*.png
+*.log
+
+# 系统文件
+Thumbs.db
+.DS_Store

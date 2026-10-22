@@ -1,0 +1,153 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+
+    <sys:String x:Key="app.name">护眼精灵</sys:String>
+
+    <sys:String x:Key="nav.overview">概览</sys:String>
+    <sys:String x:Key="nav.stats">统计</sys:String>
+    <sys:String x:Key="nav.settings">设置</sys:String>
+
+    <sys:String x:Key="st.protecting">保护中</sys:String>
+    <sys:String x:Key="st.breaking">休息中</sys:String>
+    <sys:String x:Key="st.idle">已离开</sys:String>
+    <sys:String x:Key="st.paused">已暂停</sys:String>
+    <sys:String x:Key="st.stopped">已停止</sys:String>
+
+    <sys:String x:Key="ov.title">概览</sys:String>
+    <sys:String x:Key="ov.focusToday">今日用眼 {0} 分钟</sys:String>
+    <sys:String x:Key="ov.toNextShort">下次短休</sys:String>
+    <sys:String x:Key="ov.toNextLong">下次长休</sys:String>
+    <sys:String x:Key="ov.todayShort">今日短休</sys:String>
+    <sys:String x:Key="ov.todayLong">今日长休</sys:String>
+    <sys:String x:Key="ov.todayFocus">今日用眼</sys:String>
+    <sys:String x:Key="ov.breakNow">立即休息</sys:String>
+    <sys:String x:Key="ov.pause">暂停 20 分钟</sys:String>
+    <sys:String x:Key="ov.resume">恢复保护</sys:String>
+    <sys:String x:Key="ov.start">开始保护</sys:String>
+    <sys:String x:Key="ov.stop">停止保护</sys:String>
+    <sys:String x:Key="ov.preview">预览休息画面</sys:String>
+    <sys:String x:Key="ov.idleOn">空闲检测已开启：无输入满 {0} 分钟判定为离开，倒计时暂停；离开满 {1} 分钟再回来，直接开始新一轮。</sys:String>
+    <sys:String x:Key="ov.idleOff">空闲检测已关闭：即使离开电脑，倒计时也照常走。需要时可在设置里打开。</sys:String>
+    <sys:String x:Key="ov.breakRemaining">休息剩余</sys:String>
+    <sys:String x:Key="ov.pauseRemaining">暂停剩余</sys:String>
+    <sys:String x:Key="ov.stoppedLabel">保护已停止</sys:String>
+    <sys:String x:Key="ov.idleShifted">空闲中 · 计时已暂停</sys:String>
+    <sys:String x:Key="ov.times">次</sys:String>
+    <sys:String x:Key="ov.minutes">分钟</sys:String>
+    <sys:String x:Key="ov.previewHint">点击预览</sys:String>
+
+    <sys:String x:Key="side.today">今日</sys:String>
+    <sys:String x:Key="side.breaks">{0} 次短休 · {1} 次长休</sys:String>
+    <sys:String x:Key="side.focus">已用眼 {0} 分钟</sys:String>
+
+    <sys:String x:Key="sg.title">统计</sys:String>
+    <sys:String x:Key="sg.streak">连续达标 {0} 天</sys:String>
+    <sys:String x:Key="sg.todayShort">今日短休</sys:String>
+    <sys:String x:Key="sg.todayLong">今日长休</sys:String>
+    <sys:String x:Key="sg.todayFocus">今日用眼</sys:String>
+    <sys:String x:Key="sg.todaySkip">今日跳过</sys:String>
+    <sys:String x:Key="sg.last7">近 7 天休息次数</sys:String>
+    <sys:String x:Key="sg.legendShort">短休</sys:String>
+    <sys:String x:Key="sg.legendLong">长休</sys:String>
+    <sys:String x:Key="sg.today">今天</sys:String>
+    <sys:String x:Key="sg.total">累计</sys:String>
+    <sys:String x:Key="sg.totalText">共 {0} 次休息 · {1} 小时用眼</sys:String>
+    <sys:String x:Key="sg.clear">清空统计</sys:String>
+    <sys:String x:Key="sg.clearTitle">清空统计</sys:String>
+    <sys:String x:Key="sg.clearConfirm">确定要清空全部统计数据吗？此操作不可恢复。</sys:String>
+
+    <sys:String x:Key="se.title">设置</sys:String>
+    <sys:String x:Key="se.autoSaved">改动即时生效</sys:String>
+    <sys:String x:Key="se.savedAt">已保存 · {0}</sys:String>
+    <sys:String x:Key="se.rhythm">休息节奏</sys:String>
+    <sys:String x:Key="se.shortGap">短休息间隔</sys:String>
+    <sys:String x:Key="se.shortGapDesc">连续用眼多久提醒一次</sys:String>
+    <sys:String x:Key="se.shortDuration">短休息时长</sys:String>
+    <sys:String x:Key="se.shortDurationDesc">短暂离开屏幕，远眺放松</sys:String>
+    <sys:String x:Key="se.longGap">长休息间隔</sys:String>
+    <sys:String x:Key="se.longGapDesc">多久进入一次长休息</sys:String>
+    <sys:String x:Key="se.longDuration">长休息时长</sys:String>
+    <sys:String x:Key="se.longDurationDesc">起来走动、远眺、喝口水</sys:String>
+    <sys:String x:Key="se.behavior">行为</sys:String>
+    <sys:String x:Key="se.force">强制休息（不可跳过）</sys:String>
+    <sys:String x:Key="se.forceDesc">休息窗口无法关闭，直到倒计时结束</sys:String>
+    <sys:String x:Key="se.idle">空闲检测</sys:String>
+    <sys:String x:Key="se.idleDesc">默认关闭。开启后，人不在电脑前时暂停计时</sys:String>
+    <sys:String x:Key="se.idlePrinciple">工作原理</sys:String>
+    <sys:String x:Key="se.idlePrincipleBody">只读取系统记录的「最后一次键鼠输入时间」：超过设定时长没有输入，就判定为离开，两个倒计时一起暂停，回来按离开时长结算。播放声音或前台全屏时不判定，避免看视频被误判；锁屏立即判定。全程不记录任何按键内容。</sys:String>
+    <sys:String x:Key="se.idleThreshold">多久没输入算离开</sys:String>
+    <sys:String x:Key="se.idleAwayReset">离开多久算休息过</sys:String>
+    <sys:String x:Key="se.alert">长休息前提醒</sys:String>
+    <sys:String x:Key="se.alertDesc">提前 1 分钟提醒，方便收尾手上的事</sys:String>
+    <sys:String x:Key="se.sound">休息提示音</sys:String>
+    <sys:String x:Key="se.soundDesc">开始休息时播放一声系统提示音</sys:String>
+    <sys:String x:Key="se.startup">开机自启</sys:String>
+    <sys:String x:Key="se.startupDesc">登录后自动在托盘开始守护</sys:String>
+    <sys:String x:Key="se.minimized">启动时最小化</sys:String>
+    <sys:String x:Key="se.minimizedDesc">不弹出主界面，直接待在托盘</sys:String>
+    <sys:String x:Key="se.language">界面语言</sys:String>
+    <sys:String x:Key="se.langDesc">默认跟随系统语言，切换后立即生效</sys:String>
+    <sys:String x:Key="se.langAuto">跟随系统</sys:String>
+    <sys:String x:Key="se.tipsSection">休息提示语</sys:String>
+    <sys:String x:Key="se.tipsDesc">勾选需要的提示语，休息时随机展示一条；文字可以直接点击改成自己的说法。</sys:String>
+    <sys:String x:Key="se.tipsEnabled">已启用 {0} / {1} 条</sys:String>
+    <sys:String x:Key="se.tipsAdd">添加一条</sys:String>
+    <sys:String x:Key="se.tipsReset">恢复系统默认</sys:String>
+    <sys:String x:Key="se.tipsEmpty">至少要勾选一条提示语，否则休息时没有内容可显示。</sys:String>
+    <sys:String x:Key="se.tipsDelete">删除这条</sys:String>
+    <sys:String x:Key="se.tipsRestored">提示语已恢复系统默认</sys:String>
+    <sys:String x:Key="se.tipsHint">点文字即可编辑，改完点别处自动保存</sys:String>
+
+    <sys:String x:Key="br.shortTitle">该休息啦</sys:String>
+    <sys:String x:Key="br.longTitle">站起来活动一下</sys:String>
+    <sys:String x:Key="br.remaining">休息剩余</sys:String>
+    <sys:String x:Key="br.longRemaining">长休息剩余</sys:String>
+    <sys:String x:Key="br.longTip">离开屏幕，走动、远眺、喝口水，让睫状肌彻底松弛下来。</sys:String>
+    <sys:String x:Key="br.skip">跳过这次休息</sys:String>
+    <sys:String x:Key="br.leavePreview">退出预览</sys:String>
+    <sys:String x:Key="br.previewBadge">预览</sys:String>
+    <sys:String x:Key="br.now">现在</sys:String>
+    <sys:String x:Key="br.brand">护眼精灵</sys:String>
+
+    <sys:String x:Key="tr.open">打开护眼精灵</sys:String>
+    <sys:String x:Key="tr.breakNow">立即休息</sys:String>
+    <sys:String x:Key="tr.pause">暂停 20 分钟</sys:String>
+    <sys:String x:Key="tr.resume">恢复保护</sys:String>
+    <sys:String x:Key="tr.start">开始保护</sys:String>
+    <sys:String x:Key="tr.stop">停止保护</sys:String>
+    <sys:String x:Key="tr.exit">退出</sys:String>
+    <sys:String x:Key="tr.pausedFor">已暂停 {0}</sys:String>
+    <sys:String x:Key="tr.pausedManual">已暂停（手动恢复）</sys:String>
+    <sys:String x:Key="tr.balloonTitle">护眼精灵已在后台守护</sys:String>
+    <sys:String x:Key="tr.balloonText">默认每 30 分钟提醒一次，休息 1 分钟。右键托盘图标可暂停、立即休息或退出。</sys:String>
+    <sys:String x:Key="tr.longSoonTitle">长休息还有 1 分钟</sys:String>
+    <sys:String x:Key="tr.longSoonText">把手头的事情告一段落，准备起来走动一下。</sys:String>
+    <sys:String x:Key="tr.awayTitle">已算作一次休息</sys:String>
+    <sys:String x:Key="tr.awayText">你离开了 {0} 分钟，计时从头开始，不用补休。</sys:String>
+
+    <sys:String x:Key="msg.multiInstance">护眼精灵已经在运行了，请查看屏幕右下角的托盘图标。</sys:String>
+
+    <sys:String x:Key="unit.min">分钟</sys:String>
+
+    <sys:String x:Key="lang.zh">简体中文</sys:String>
+    <sys:String x:Key="lang.en">English</sys:String>
+
+    <sys:String x:Key="tip.blink">慢慢眨眼 10 次，每次闭眼停 2 秒，让泪膜重新铺满眼球</sys:String>
+    <sys:String x:Key="tip.faraway">找一个 6 米外的固定点，盯着数到 20 再回到屏幕</sys:String>
+    <sys:String x:Key="tip.kegel">做 10 次提肛收缩，每次收紧保持 3 秒再放松</sys:String>
+    <sys:String x:Key="tip.breathe">4 秒吸气、4 秒屏息、6 秒呼气，做 3 轮</sys:String>
+    <sys:String x:Key="tip.neck">双肩耸到耳朵，停 5 秒再放下，重复 5 次</sys:String>
+    <sys:String x:Key="tip.stand">站起来，双手举过头顶向上伸，保持 10 秒</sys:String>
+    <sys:String x:Key="tip.squat">做 10 个缓慢深蹲，膝盖不要超过脚尖</sys:String>
+    <sys:String x:Key="tip.eight">眼珠沿「8」字慢慢转 3 圈，头保持不动</sys:String>
+    <sys:String x:Key="tip.palms">双手搓热，虚盖在闭着的眼睛上 30 秒</sys:String>
+    <sys:String x:Key="tip.temple">用指腹按揉太阳穴 30 秒，顺带松开紧皱的眉头</sys:String>
+    <sys:String x:Key="tip.waist">双手扶腰轻轻后仰，给久坐的腰椎松一口气</sys:String>
+    <sys:String x:Key="tip.wrist">十指交叉翻掌向上推，拉开手腕和前臂</sys:String>
+    <sys:String x:Key="tip.water">起身倒一杯温水，慢慢喝完再回来</sys:String>
+    <sys:String x:Key="tip.walk">起身走一圈，让下肢的血流起来</sys:String>
+    <sys:String x:Key="tip.focus">在窗外找一个近处和一个远处的东西，来回对焦 5 次</sys:String>
+    <sys:String x:Key="tip.yawn">故意打个大哈欠，顺便松开咬肌和下巴</sys:String>
+
+</ResourceDictionary>

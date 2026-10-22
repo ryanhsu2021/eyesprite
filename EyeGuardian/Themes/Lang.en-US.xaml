@@ -1,0 +1,153 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+
+    <sys:String x:Key="app.name">EyeSprite</sys:String>
+
+    <sys:String x:Key="nav.overview">Overview</sys:String>
+    <sys:String x:Key="nav.stats">Insights</sys:String>
+    <sys:String x:Key="nav.settings">Settings</sys:String>
+
+    <sys:String x:Key="st.protecting">Protecting</sys:String>
+    <sys:String x:Key="st.breaking">On break</sys:String>
+    <sys:String x:Key="st.idle">Away</sys:String>
+    <sys:String x:Key="st.paused">Paused</sys:String>
+    <sys:String x:Key="st.stopped">Stopped</sys:String>
+
+    <sys:String x:Key="ov.title">Overview</sys:String>
+    <sys:String x:Key="ov.focusToday">Screen time today: {0} min</sys:String>
+    <sys:String x:Key="ov.toNextShort">Next break</sys:String>
+    <sys:String x:Key="ov.toNextLong">Next long break</sys:String>
+    <sys:String x:Key="ov.todayShort">Short breaks</sys:String>
+    <sys:String x:Key="ov.todayLong">Long breaks</sys:String>
+    <sys:String x:Key="ov.todayFocus">Screen time</sys:String>
+    <sys:String x:Key="ov.breakNow">Take a break</sys:String>
+    <sys:String x:Key="ov.pause">Pause 20 min</sys:String>
+    <sys:String x:Key="ov.resume">Resume</sys:String>
+    <sys:String x:Key="ov.start">Start</sys:String>
+    <sys:String x:Key="ov.stop">Stop</sys:String>
+    <sys:String x:Key="ov.preview">Preview break screen</sys:String>
+    <sys:String x:Key="ov.idleOn">Idle detection on: after {0} min without input you count as away and the countdown pauses; coming back after {1} min or more starts a fresh cycle.</sys:String>
+    <sys:String x:Key="ov.idleOff">Idle detection off: the countdown keeps running while you are away. Turn it on in Settings if you want it.</sys:String>
+    <sys:String x:Key="ov.breakRemaining">Break left</sys:String>
+    <sys:String x:Key="ov.pauseRemaining">Paused</sys:String>
+    <sys:String x:Key="ov.stoppedLabel">Protection stopped</sys:String>
+    <sys:String x:Key="ov.idleShifted">Away · paused</sys:String>
+    <sys:String x:Key="ov.times">times</sys:String>
+    <sys:String x:Key="ov.minutes">min</sys:String>
+    <sys:String x:Key="ov.previewHint">Click to preview</sys:String>
+
+    <sys:String x:Key="side.today">Today</sys:String>
+    <sys:String x:Key="side.breaks">{0} short · {1} long</sys:String>
+    <sys:String x:Key="side.focus">{0} min screen time</sys:String>
+
+    <sys:String x:Key="sg.title">Insights</sys:String>
+    <sys:String x:Key="sg.streak">{0}-day streak</sys:String>
+    <sys:String x:Key="sg.todayShort">Short breaks</sys:String>
+    <sys:String x:Key="sg.todayLong">Long breaks</sys:String>
+    <sys:String x:Key="sg.todayFocus">Screen time</sys:String>
+    <sys:String x:Key="sg.todaySkip">Skipped</sys:String>
+    <sys:String x:Key="sg.last7">Breaks in the last 7 days</sys:String>
+    <sys:String x:Key="sg.legendShort">Short</sys:String>
+    <sys:String x:Key="sg.legendLong">Long</sys:String>
+    <sys:String x:Key="sg.today">Today</sys:String>
+    <sys:String x:Key="sg.total">All time</sys:String>
+    <sys:String x:Key="sg.totalText">{0} breaks · {1} h of screen time</sys:String>
+    <sys:String x:Key="sg.clear">Clear data</sys:String>
+    <sys:String x:Key="sg.clearTitle">Clear data</sys:String>
+    <sys:String x:Key="sg.clearConfirm">Delete all statistics? This cannot be undone.</sys:String>
+
+    <sys:String x:Key="se.title">Settings</sys:String>
+    <sys:String x:Key="se.autoSaved">Changes apply instantly</sys:String>
+    <sys:String x:Key="se.savedAt">Saved · {0}</sys:String>
+    <sys:String x:Key="se.rhythm">Rhythm</sys:String>
+    <sys:String x:Key="se.shortGap">Short break every</sys:String>
+    <sys:String x:Key="se.shortGapDesc">How long you work before a reminder</sys:String>
+    <sys:String x:Key="se.shortDuration">Short break length</sys:String>
+    <sys:String x:Key="se.shortDurationDesc">Look away and relax briefly</sys:String>
+    <sys:String x:Key="se.longGap">Long break every</sys:String>
+    <sys:String x:Key="se.longGapDesc">How often to take a long break</sys:String>
+    <sys:String x:Key="se.longDuration">Long break length</sys:String>
+    <sys:String x:Key="se.longDurationDesc">Stand up, walk, hydrate</sys:String>
+    <sys:String x:Key="se.behavior">Behaviour</sys:String>
+    <sys:String x:Key="se.force">Force breaks</sys:String>
+    <sys:String x:Key="se.forceDesc">The break screen cannot be closed until it ends</sys:String>
+    <sys:String x:Key="se.idle">Idle detection</sys:String>
+    <sys:String x:Key="se.idleDesc">Off by default. When on, leaving your desk pauses the countdown</sys:String>
+    <sys:String x:Key="se.idlePrinciple">How it works</sys:String>
+    <sys:String x:Key="se.idlePrincipleBody">It only reads the system timestamp of your last keyboard/mouse input. No input for the set duration counts as being away, both countdowns pause, and coming back settles the time you were gone. To avoid false positives while watching videos it ignores you when audio is playing or a fullscreen app is in front; locking the screen counts immediately. No keystroke content is ever recorded.</sys:String>
+    <sys:String x:Key="se.idleThreshold">Away when idle for</sys:String>
+    <sys:String x:Key="se.idleAwayReset">Counts as a break after</sys:String>
+    <sys:String x:Key="se.alert">Warn before long break</sys:String>
+    <sys:String x:Key="se.alertDesc">1 minute heads-up so you can wrap up</sys:String>
+    <sys:String x:Key="se.sound">Break sound</sys:String>
+    <sys:String x:Key="se.soundDesc">Play a short system sound when a break starts</sys:String>
+    <sys:String x:Key="se.startup">Launch at login</sys:String>
+    <sys:String x:Key="se.startupDesc">Start guarding from the tray after sign-in</sys:String>
+    <sys:String x:Key="se.minimized">Start minimized</sys:String>
+    <sys:String x:Key="se.minimizedDesc">Stay in the tray without opening the window</sys:String>
+    <sys:String x:Key="se.language">Language</sys:String>
+    <sys:String x:Key="se.langDesc">Follows your system by default; switching applies at once</sys:String>
+    <sys:String x:Key="se.langAuto">System default</sys:String>
+    <sys:String x:Key="se.tipsSection">Break tips</sys:String>
+    <sys:String x:Key="se.tipsDesc">Tick the ones you want; a random tip shows up at each break. Click any text to make it your own.</sys:String>
+    <sys:String x:Key="se.tipsEnabled">{0} of {1} enabled</sys:String>
+    <sys:String x:Key="se.tipsAdd">Add a tip</sys:String>
+    <sys:String x:Key="se.tipsReset">Restore defaults</sys:String>
+    <sys:String x:Key="se.tipsEmpty">Keep at least one tip enabled, otherwise breaks have nothing to show.</sys:String>
+    <sys:String x:Key="se.tipsDelete">Remove this tip</sys:String>
+    <sys:String x:Key="se.tipsRestored">Tips restored to defaults</sys:String>
+    <sys:String x:Key="se.tipsHint">Click the text to edit; it saves when you click away</sys:String>
+
+    <sys:String x:Key="br.shortTitle">Time to rest</sys:String>
+    <sys:String x:Key="br.longTitle">Stand up and move</sys:String>
+    <sys:String x:Key="br.remaining">Break left</sys:String>
+    <sys:String x:Key="br.longRemaining">Long break left</sys:String>
+    <sys:String x:Key="br.longTip">Leave the screen. Walk, look far away, drink water — let your ciliary muscle relax.</sys:String>
+    <sys:String x:Key="br.skip">Skip this break</sys:String>
+    <sys:String x:Key="br.leavePreview">Exit preview</sys:String>
+    <sys:String x:Key="br.previewBadge">PREVIEW</sys:String>
+    <sys:String x:Key="br.now">Now</sys:String>
+    <sys:String x:Key="br.brand">EyeSprite</sys:String>
+
+    <sys:String x:Key="tr.open">Open EyeSprite</sys:String>
+    <sys:String x:Key="tr.breakNow">Take a break</sys:String>
+    <sys:String x:Key="tr.pause">Pause 20 min</sys:String>
+    <sys:String x:Key="tr.resume">Resume</sys:String>
+    <sys:String x:Key="tr.start">Start</sys:String>
+    <sys:String x:Key="tr.stop">Stop</sys:String>
+    <sys:String x:Key="tr.exit">Exit</sys:String>
+    <sys:String x:Key="tr.pausedFor">Paused {0}</sys:String>
+    <sys:String x:Key="tr.pausedManual">Paused (resume manually)</sys:String>
+    <sys:String x:Key="tr.balloonTitle">EyeSprite is watching your back</sys:String>
+    <sys:String x:Key="tr.balloonText">A reminder every 30 minutes, 1 minute each. Right-click the tray icon to pause or exit.</sys:String>
+    <sys:String x:Key="tr.longSoonTitle">Long break in 1 minute</sys:String>
+    <sys:String x:Key="tr.longSoonText">Wrap up what you are doing and get ready to move.</sys:String>
+    <sys:String x:Key="tr.awayTitle">Counted as a break</sys:String>
+    <sys:String x:Key="tr.awayText">You were away for {0} min, so the countdown starts over.</sys:String>
+
+    <sys:String x:Key="msg.multiInstance">EyeSprite is already running. Check the tray icon at the bottom-right corner.</sys:String>
+
+    <sys:String x:Key="unit.min">min</sys:String>
+
+    <sys:String x:Key="lang.zh">简体中文</sys:String>
+    <sys:String x:Key="lang.en">English</sys:String>
+
+    <sys:String x:Key="tip.blink">Blink slowly 10 times, holding each blink for 2 seconds to refresh your tear film</sys:String>
+    <sys:String x:Key="tip.faraway">Find a spot 6 meters away, count to 20, then look back at the screen</sys:String>
+    <sys:String x:Key="tip.kegel">Do 10 pelvic floor squeezes, holding each for 3 seconds</sys:String>
+    <sys:String x:Key="tip.breathe">In for 4, hold for 4, out for 6. Three rounds</sys:String>
+    <sys:String x:Key="tip.neck">Shrug your shoulders up to your ears, hold 5 seconds, release. Five times</sys:String>
+    <sys:String x:Key="tip.stand">Stand up and stretch both arms overhead for 10 seconds</sys:String>
+    <sys:String x:Key="tip.squat">Do 10 slow squats, keeping your knees behind your toes</sys:String>
+    <sys:String x:Key="tip.eight">Trace a figure eight with your eyes, three slow laps, head still</sys:String>
+    <sys:String x:Key="tip.palms">Rub your palms warm, then cup them over closed eyes for 30 seconds</sys:String>
+    <sys:String x:Key="tip.temple">Massage your temples for 30 seconds and unclench your brow</sys:String>
+    <sys:String x:Key="tip.waist">Hands on hips, lean back gently to take the load off your lower back</sys:String>
+    <sys:String x:Key="tip.wrist">Interlace your fingers, turn the palms out and press up to open your wrists</sys:String>
+    <sys:String x:Key="tip.water">Walk over and pour a glass of warm water. Sip it slowly</sys:String>
+    <sys:String x:Key="tip.walk">Take a lap around the room and get your circulation going</sys:String>
+    <sys:String x:Key="tip.focus">Find one near and one far object out the window, refocus between them 5 times</sys:String>
+    <sys:String x:Key="tip.yawn">Fake a big yawn and let your jaw and face go slack</sys:String>
+
+</ResourceDictionary>
